@@ -1,13 +1,605 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 90%;
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #1b1b1b;
+  color: rgb(221, 219, 219);
+}
+h2 {
+  font-weight: lighter;
+  font-size: 2.6rem;
+  line-height: 4rem;
+}
+button {
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 3px solid #23d997;
+  color: white;
+  transition: all 0.5s ease;
+  margin: 2rem 0;
+  font-family: "Inter", sans-serif;
+}
+button:hover {
+  background: #23d997;
+  color: white;
+}
+
+/* NAVBAR */
+nav .line{
+  margin-bottom: 0;
+  /* width: 0; */
+}
+.nav-link:active,
+.nav-link:focus {
+  color: #23d997;
+}
+.toggle-btn{
+  margin: 0;
+  display: none;
+}
+.toggle-btn:focus{
+  border:1px solid white
+}
+a,
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-link:hover {
+  color: white;
+  background-color: #363636;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+a:hover{
+  color: white;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  position: relative;
+}
+#Logo {
+  font-size: 1.8rem;
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+/* HERO SECTION */
+.description {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+  margin: auto;
+  padding: 2rem 4rem;
+  transition: all 0.3s linear;
+  width: 100vw;
+}
+.row {
+  width: 100%;
+}
+.about {
+  z-index: 99;
+}
+.title {
+  color: #ffffff;
+  z-index: 2;
+}
+.title h2 {
+  line-height: 40px;
+  font-weight: bolder;
+}
+.title p {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+.image {
+  transition: all 0.3s linear;
+  z-index: 2;
+  padding: 0;
+}
+.hero-btn {
+  z-index: 2;
+}
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+/* ABOUT MYSELF */
+.introduction.description{
+  min-height: 30vh;
+  margin:2rem 0;
+  /* border: 1px solid white; */
+}
+.about-me{
+  margin: 2rem 0;
+  line-height: 3rem;
+  font-size: 1.8rem;
+}
+
+/* SKILL SECTION */
+.skill-name {
+  margin: 2rem 0;
+}
+.main-heading {
+  margin: auto;
+  justify-self: flex-start;
+  padding: 2rem 0;
+  font-size: 2.6rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 2rem 5rem;
+  border: none;
+}
+.icon {
+  height: 70px;
+  width: 70px;
+}
+/* TIMELINE */
+.timeline {
+  align-items: flex-start;
+}
+.education-details header,.experience-details header{
+  padding: 1rem;
+}
+.heading {
+  margin: auto;
+  margin: 3rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  min-width: 100%;
+  position: relative;
+  top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 3rem;
+}
+
+.css-q6vr8b-TimelineContentDetails {
+  font-size: 1.6rem !important;
+  color: #1b1b1b;
+  font-weight: 600 !important;
+}
+.card-title.css-1r0flji-TimelineCardHeader {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.card-sub-title.css-16xwfah-TimelineContentSubTitle {
+  font-size: 1.4rem !important;
+  color: #41515f !important;
+}
+.card-title.css-mskrq5-TimelineCardTitle {
+  font-size: 1.5rem !important;
+  padding: 0 1rem;
+  /* padding-left: 0 !important; */
+}
+.css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+  font-size: 1.5rem !important;
+  color: #1b1b1b !important;
+}
+.css-16kzc6-ShowMore{
+  color: #41515f !important;
+  font-size: 1.6rem !important;
+}
+
+/* CONTACT FORM */
+footer.description{
+  align-items: flex-start;
+}
+#contact {
+  align-items: flex-start;
+}
+.info {
+  padding-left: 0;
+}
+.user-info {
+  /* border: 1px solid red; */
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.social-media-icons {
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.social-media-icons li{
+  margin: 0;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+.form {
+  /* border: 1px solid greenyellow; */
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.icons {
+  padding: 0;
+  /* margin: 0 0.5rem; */
+  margin-right: 3rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 3px solid #23d997;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background: #23d997;
+  color: white;
+}
+.links:hover {
+  color: white;
+}
+
+
+input,
+textarea {
+  background-color: #1a1919;
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  color: white;
+}
+input {
+  height: 8vh;
+}
+textarea {
+  height: 18vh;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #23d997;
+  color: white;
+}
+
+/* PROJECTS */
+.project-container {
+  min-height: 60vh;
+  overflow: hidden;
+}
+.project-title {
+  padding: 1rem 0rem;
+}
+.project-card {
+  /* border: 1px solid white; */
+  /* padding:2rem 4rem; */
+  padding-bottom: 10rem;
+  /* overflow: hidden; */
+}
+.line {
+  height: 0.4rem;
+  background-color: #23d997;
+  margin-bottom: 3rem;
+}
+.img-hide {
+  /* background-color: #23d997; */
+  overflow: hidden;
+}
+
+.project-img:hover{
+  padding: 2rem;
+  transition: all 0.3s linear;
+}
+.project-img {
+  /* padding: 2rem; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+.project-description {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    padding: 2rem 10rem;
+  }
+  .main-heading{
+    margin-bottom: 3rem;
+  }
+  .title{
+    font-size: 3rem;
+  }
+  footer.description{
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .about button {
+    margin: 2rem 0rem 5rem 0rem;
+    padding: 1rem;
+  }
+  /* h2 {
+    font-size: 2rem;
+  } */
+  .main-heading {
+    font-size: 2.4rem;
+  }
+  .heading {
+    /* padding: 0 2rem; */
+    margin: 1rem 0;
+  }
+  .card {
+    padding: 0;
+  }
+  .toggle-btn{
+    display: inline-block;
+  }
+  .social-media-icons .icons{
+ width: 50%;
+  }
+}
+@media screen and (max-width:1000px) {
+  body {
+    text-align: center;
+  }
+  .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+    font-size: 1.7rem !important;
+    color: #1b1b1b !important;
+  }
+  .introduction.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image img{
+    width: 80%;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media-icons{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-heading{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 
+  /* h2 {
+    font-size: 1.8rem;
+  } */
+  .main-heading {
+    font-size: 2.3rem;
+  }
+  .email,
+  .location {
+    font-size: 2rem;
+  }
+  .card-title.css-1r0flji-TimelineCardHeader {
+    padding: 0;
+  }
+  .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+    font-size: 1.8rem !important;
+  }
+  .css-qz9nci{
+    font-size: 2rem !important;
+    color: #1b1b1b;
+  }
+  .css-1iv48dl-TimelineVerticalWrapper,
+  .css-17kgqb4-TimelineMainWrapper {
+    padding: 0 !important;
+  }
+  .description {
+    padding: 2rem 4rem;
+  }
+  .project-card {
+    padding: 2rem;
+  }
+  .project-title {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .project-card {
+    padding-bottom: 4rem;
+    padding: 1rem;
+  }
+  .project-card .main-heading {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+  .project-container.description {
+    padding: 2rem;
+  }
+  .project-description {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width:950px) {
+  .image img{
+    width: auto;
+  }
+}
+@media screen and (max-width:500px){
+  .introduction.description{
+    margin: 0;
+  }
+  .about.description,h2{
+    margin-top: 2rem ;
+  }
+  .content{
+    font-size: 2.5rem;
+  }
+  footer.description{
+    align-items: flex-start;
+  }
+  .description{
+    min-height: 70vh;
+  }
+  .title p,.hero-btn{
+    font-size: 2rem;
+  }
+  .introduction p{
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .main-heading{
+    font-size: 3rem;
+  }
+  p,label,button{
+  font-size: 2rem;
+  }
+  a{
+  font-size: 1.8rem;
+  }
+  .social-media-icons a{
+  font-size: 2rem;
+  }
+  .card-title{
+  font-size: 2rem !important;
+  }
+  .title h2{
+  font-size: 4rem;
+  }
+  .title .content,.hero-btn,.project-description{
+  font-size: 2.5rem;
+  }
+  .title p{
+  margin-top: 2rem;
+  }
+  .image img{
+  width: 100%;
+  }
+  .css-9p5trb{
+  font-size: 1.5rem !important;
+  margin-top: 2rem !important;
+  }
+}
+@media screen and (min-width:1600px){
+  .about.description,h2{
+    margin-top: 2rem ;
+  }
+  .content{
+    font-size: 2.5rem;
+  }
+  footer.description{
+    align-items: flex-start;
+  }
+  .description{
+    min-height: 70vh;
+  }
+  .title p,.hero-btn{
+    font-size: 2rem;
+  }
+  .introduction p{
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .main-heading{
+    font-size: 3rem;
+  }
+  p,label,button{
+  font-size: 2rem;
+  }
+  a{
+  font-size: 1.8rem;
+  }
+  .social-media-icons a{
+  font-size: 2rem;
+  }
+  .card-title{
+  font-size: 2rem !important;
+  }
+  .title h2{
+  font-size: 4rem;
+  }
+  .title .content,.hero-btn,.project-description{
+  font-size: 2.5rem;
+  }
+  .title p{
+  margin-top: 2rem;
+  }
+  .image img{
+  width: 100%;
+  }
+  .card-sub-title.css-16xwfah-TimelineContentSubTitle{
+  font-size: 1.9rem !important;
+  margin-top: 2rem !important;
+  }
+  .css-16kzc6-ShowMore,.css-q6vr8b-TimelineContentDetails{
+  font-size: 1.9rem !important;
+  }
 }
