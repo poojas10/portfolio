@@ -11,7 +11,7 @@ export default function AboutSections() {
       <div className=" about description row">
         <div className="title col-lg-6">
           <motion.h2  variants={titleAnim} initial="hidden" animate="show">
-            Hey,I'm Pooja Sakshi Ram
+            Hey,<br/>I'm Pooja Sakshi Ram
           </motion.h2>
 
           <motion.p className='content' variants={titleAnim} initial="hidden" animate="show">

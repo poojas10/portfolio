@@ -386,30 +386,20 @@ textarea:focus {
   .main-heading {
     margin-bottom: 3rem;
   }
-  .title {
-    /* font-size: 3rem; */
-  }
   footer.description {
     align-items: flex-start;
   }
 }
 @media screen and (max-width: 1200px) {
   .about {
-    padding: 2rem 2rem;
+    padding: 2rem;
     text-align: center;
   }
   .about button {
     margin: 2rem 0rem 5rem 0rem;
     padding: 1rem;
   }
-  /* h2 {
-    font-size: 2rem;
-  } */
-  .main-heading {
-    /* font-size: 2.4rem; */
-  }
   .heading {
-    /* padding: 0 2rem; */
     margin: 1rem 0;
   }
   .card {
@@ -430,7 +420,6 @@ textarea:focus {
   .css-8765yg,
   .css-qz9nci,
   .css-9p5trb {
-    /* font-size: 1.7rem !important; */
     color: #1b1b1b !important;
   }
   .about-me {
@@ -442,9 +431,7 @@ textarea:focus {
     justify-content: center;
     align-items: center;
   }
-  .image img {
-    /* width: 80%; */
-  }
+
   .title {
     display: flex;
     flex-direction: column;
@@ -459,7 +446,6 @@ textarea:focus {
   }
   .main-heading {
     margin-bottom: 2rem;
-    /* font-size: 3rem; */
   }
   .introduction.description {
     margin: auto;
@@ -470,27 +456,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 700px) {
-  /* h2 {
-    font-size: 1.8rem;
-  } */
-  .main-heading {
-    /* font-size: 2.3rem; */
-  }
-  /* .email,
-  .location {
-    font-size: 2rem;
-  } */
   .card-title.css-1r0flji-TimelineCardHeader {
     padding: 0;
   }
-  .css-1kg4xqy-TitleWrapper,
-  .css-8765yg,
-  .css-qz9nci,
-  .css-9p5trb {
-    /* font-size: 1.8rem !important; */
-  }
   .css-qz9nci {
-    /* font-size: 2rem !important; */
     color: #1b1b1b;
   }
   .css-1iv48dl-TimelineVerticalWrapper,
@@ -504,7 +473,6 @@ textarea:focus {
     padding: 2rem;
   }
   .project-title {
-    /* padding: 1rem; */
     margin-bottom: 2rem;
   }
   .heading {
@@ -518,21 +486,16 @@ textarea:focus {
   }
   .project-card .main-heading {
     margin-bottom: 0;
-    /* font-size: 3rem; */
   }
   .project-container.description {
     padding: 2rem;
   }
   .project-description {
-    /* font-size: 1.4rem; */
     margin: 2rem 0;
   }
   .about.description,
   h2 {
     margin-top: 2rem;
-  }
-  .content {
-    /* font-size: 2.5rem; */
   }
   footer.description {
     align-items: flex-start;
@@ -540,54 +503,13 @@ textarea:focus {
   .description {
     min-height: 70vh;
   }
-  .title p,
-  .hero-btn {
-    /* font-size: 2rem; */
-  }
   .introduction p {
     /* font-size: 2.5rem; */
     line-height: 35px;
   }
-  .main-heading {
-    /* font-size: 3rem; */
-  }
-  p,
-  label,
-  button {
-    /* font-size: 2rem; */
-  }
-  a {
-    /* font-size: 1.8rem; */
-  }
-  .social-media-icons a {
-    /* font-size: 2rem; */
-  }
-  .card-title {
-    /* font-size: 2rem !important; */
-  }
-  .title h2 {
-    /* font-size: 4rem; */
-  }
-  .title .content,
-  .hero-btn,
-  .project-description {
-    /* font-size: 2.5rem; */
-  }
-  .title p {
-    margin-top: 2rem;
-  }
-  .image img {
-    /* width: 100%; */
-  }
-  .css-9p5trb {
-    /* font-size: 1.5rem !important; */
-    margin-top: 2rem !important;
-  }
-}
 
-@media screen and (min-width: 700px) and (max-width: 950px) {
-  .image img {
-    /* width: auto; */
+  .css-9p5trb {
+    margin-top: 2rem !important;
   }
 }
 
@@ -596,65 +518,29 @@ textarea:focus {
   h2 {
     margin-top: 2rem;
   }
-  .content {
-    /* font-size: 2.5rem; */
-  }
+
   footer.description {
     align-items: flex-start;
   }
   .description {
     min-height: 70vh;
   }
-  .about-me{
+  .about-me {
     font-size: 1.8rem;
   }
-  .title p,
-  .hero-btn {
-    /* font-size: 2rem; */
-  }
+
   .introduction p {
-    /* font-size: 2.5rem; */
     line-height: 35px;
   }
-  .main-heading {
-    /* font-size: 3rem; */
-  }
-  p,
-  label,
-  button {
-    /* font-size: 2rem; */
-  }
-  a {
-    /* font-size: 1.8rem; */
-  }
-  .social-media-icons a {
-    /* font-size: 2rem; */
-  }
-  .card-title {
-    /* font-size: 2rem !important; */
-  }
-  .title h2 {
-    /* font-size: 4rem; */
-  }
-  .title .content,
-  .hero-btn,
-  .project-description {
-    /* font-size: 2.5rem; */
-  }
+
   .title p {
     margin-top: 2rem;
   }
   .image img {
     width: 100%;
-    /* height: 80vh; */
   }
   .card-sub-title.css-16xwfah-TimelineContentSubTitle {
-    /* font-size: 1.9rem !important; */
     margin-top: 2rem !important;
-  }
-  .css-16kzc6-ShowMore,
-  .css-q6vr8b-TimelineContentDetails {
-    /* font-size: 1.9rem !important; */
   }
 }
 
@@ -665,7 +551,7 @@ textarea:focus {
   p {
     font-size: 1.7rem;
   }
-  .image{
+  .image {
     height: 80vh;
   }
 }
