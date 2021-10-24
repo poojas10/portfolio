@@ -28,7 +28,7 @@ export default function AboutSections() {
             variants={photoAnim}
             // className="img-fluid"
             src="./img/newhero.svg"
-            alt="laptop setup with focused keyboard"
+            alt="illustration"
           />
         </div>
           <Wave/>
