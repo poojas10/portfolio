@@ -6,7 +6,7 @@ export const projects = [
     alt: "ip tracker project app",
     url: "https://ip-address-trakingapp.netlify.app/",
     about:
-      "Tracks IP Location of user by using public API and displaying User's Information such as country,time zone name.Programming paradigm used-OOPS. Learned about asynchronous programming while developing this web app",
+      "Tracks IP Location of user by using public API and displaying User's Information such as country, time zone name. Programming paradigm used-OOPS. Learned about asynchronous programming while developing this web app.",
   },
   {
     id: 6,
@@ -15,7 +15,7 @@ export const projects = [
     alt: "Grocery Bud project screenshot",
     url: "https://grocery-shopping-list.netlify.app/",
     about:
-      "This project was developed using React.It helped me during my grocery shopping and even if the page refreshes the items are still on the list.",
+      "This project was developed using React. It helped me during my grocery shopping and even if the page refreshes the items are still on the list.",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const projects = [
     alt: "cart shopping project screenshot",
     url: "https://cart-shopping-demo.netlify.app/",
     about:
-      "This project was a great way of applying useContext and useReducer hooks of React.The data is fetched using API.",
+      "This project was a great way of applying useContext and useReducer hooks of React. The data is fetched using API.",
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const projects = [
     img: "../img/paragraph-generator.webp",
     alt: "Paragraph Generator project screenshot",
     url: "https://paragraph-generator-app.netlify.app/",
-    about: "A different Paragraph Generator that does not generates Lorem Ipsum.Useful as demo content",
+    about: "A different Paragraph Generator that does not generates Lorem Ipsum. Useful as demo content",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ export const projects = [
     alt: "slider project screenshot",
     url: "https://users-slider.netlify.app/",
     about:
-      "Slider using React, learned about useState and useEffect hooks by developing this",
+      "Slider using React, learned about useState and useEffect hooks by developing this.",
   },
 
   {
@@ -78,6 +78,6 @@ export const projects = [
     alt: "memory-game-desktop",
     url: "https://focus-memory-game.netlify.app",
     about:
-      "Memory Game developed by using Javascript,a quick and fun game to play during breaks and testing how sharp the player's memory is.",
+      "Memory Game developed by using Javascript, a quick and fun game to play during breaks and testing how sharp the player's memory is.",
   },
 ];

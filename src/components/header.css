@@ -56,8 +56,8 @@
       max-height: 70px !important;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 1rem 6rem;
+      justify-content: flex-end;
+      /* padding: 1rem 6rem; */
     }
     .toggle-btn {
         display: none;
