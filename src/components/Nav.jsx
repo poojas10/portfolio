@@ -17,7 +17,7 @@ export default function Nav() {
   }
   useEffect(() => {
         if(isToggle){
-            navHeight.current.style.maxHeight='250px'
+            navHeight.current.style.maxHeight='200px'
         }
         else{
             navHeight.current.style.maxHeight='0  ' 

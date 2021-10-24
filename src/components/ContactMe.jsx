@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 export default function ContactMe() {
   return (
     <footer className="row description container-fluid">
-      <h1 className="main-heading">
-        <span>Contact Me</span> <br />
+      <h2 className="main-heading">
+        <span className='contact-title'>Contact Me</span> <br />
         I'd love to hear your thoughts!
-      </h1>
+      </h2>
       <div className="info col-lg-6">
         <div className="user-info">
-          <h2>Pooja Sakshi Ram</h2>
+          <p className='content'>Pooja Sakshi Ram</p>
           <p className="location content">Hyderabad,Telangana</p>
           <p className="email content">poojasram7@gmail.com</p>
           <ul className="social-media-icons row">

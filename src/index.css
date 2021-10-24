@@ -21,14 +21,20 @@ body {
   background-color: #1b1b1b;
   color: rgb(221, 219, 219);
 }
+h1{
+  font-size: 3rem;
+}
 h2 {
   font-weight: lighter;
   font-size: 2.6rem;
   line-height: 4rem;
 }
+p{
+  color: #ffffff;
+}
 button {
   font-weight: bold;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   cursor: pointer;
   padding: 1rem 2rem;
   background: transparent;
@@ -84,7 +90,7 @@ li {
   position: relative;
 }
 #Logo {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   font-family: "Lobster", cursive;
   font-weight: lighter;
   color: white;
@@ -106,6 +112,7 @@ li {
 }
 .about {
   z-index: 99;
+  margin: 1rem 0;
 }
 .title {
   color: #ffffff;
@@ -116,18 +123,22 @@ li {
   font-weight: bolder;
 }
 .title p {
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   margin: 1rem 0;
 }
 .image {
   transition: all 0.3s linear;
   z-index: 2;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-btn {
   z-index: 2;
 }
 .image img {
+  width: 80%;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -147,8 +158,8 @@ li {
 }
 .about-me{
   margin: 2rem 0;
-  line-height: 3rem;
-  font-size: 1.8rem;
+  line-height: 4rem;
+  /* font-size: 1.8rem; */
 }
 
 /* SKILL SECTION */
@@ -159,7 +170,8 @@ li {
   margin: auto;
   justify-self: flex-start;
   padding: 2rem 0;
-  font-size: 2.6rem;
+  font-weight: bolder;
+  /* font-size: 2.6rem; */
 }
 
 .card {
@@ -211,21 +223,22 @@ li {
   margin: auto;
 }
 .card-sub-title.css-16xwfah-TimelineContentSubTitle {
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   color: #41515f !important;
 }
 .card-title.css-mskrq5-TimelineCardTitle {
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
   padding: 0 1rem;
   /* padding-left: 0 !important; */
 }
 .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
+  font-size: 1.6rem !important;
   color: #1b1b1b !important;
 }
 .css-16kzc6-ShowMore{
   color: #41515f !important;
-  font-size: 1.6rem !important;
+  font-size: 1.4rem !important;
 }
 
 /* CONTACT FORM */
@@ -234,6 +247,9 @@ footer.description{
 }
 #contact {
   align-items: flex-start;
+}
+.contact-title{
+  line-height: 40px;
 }
 .info {
   padding-left: 0;
@@ -352,7 +368,7 @@ textarea:focus {
 }
 .project-description {
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -363,7 +379,7 @@ textarea:focus {
     margin-bottom: 3rem;
   }
   .title{
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
   footer.description{
     align-items: flex-start;
@@ -382,7 +398,7 @@ textarea:focus {
     font-size: 2rem;
   } */
   .main-heading {
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
   }
   .heading {
     /* padding: 0 2rem; */
@@ -403,8 +419,11 @@ textarea:focus {
     text-align: center;
   }
   .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
-    font-size: 1.7rem !important;
+    /* font-size: 1.7rem !important; */
     color: #1b1b1b !important;
+  }
+  .about-me{
+    font-size: 1.9rem;
   }
   .introduction.description{
     display: flex;
@@ -420,6 +439,7 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
   }
   .social-media-icons{
     flex-direction: row;
@@ -428,7 +448,13 @@ textarea:focus {
   }
   .main-heading{
     margin-bottom: 2rem;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+  }
+  .introduction.description{
+    margin: auto;
+  }
+  nav li{
+    margin: 0.4rem 0;
   }
 }
 
@@ -438,20 +464,20 @@ textarea:focus {
     font-size: 1.8rem;
   } */
   .main-heading {
-    font-size: 2.3rem;
+    /* font-size: 2.3rem; */
   }
-  .email,
+  /* .email,
   .location {
     font-size: 2rem;
-  }
+  } */
   .card-title.css-1r0flji-TimelineCardHeader {
     padding: 0;
   }
   .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
-    font-size: 1.8rem !important;
+    /* font-size: 1.8rem !important; */
   }
   .css-qz9nci{
-    font-size: 2rem !important;
+    /* font-size: 2rem !important; */
     color: #1b1b1b;
   }
   .css-1iv48dl-TimelineVerticalWrapper,
@@ -465,8 +491,11 @@ textarea:focus {
     padding: 2rem;
   }
   .project-title {
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-bottom: 2rem;
+  }
+  .heading{
+    padding: 1rem 0;
   }
 
 }
@@ -477,31 +506,20 @@ textarea:focus {
   }
   .project-card .main-heading {
     margin-bottom: 0;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
   .project-container.description {
     padding: 2rem;
   }
   .project-description {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     margin: 2rem 0;
-  }
-}
-
-@media screen and (min-width:700px) and (max-width:950px) {
-  .image img{
-    width: auto;
-  }
-}
-@media screen and (max-width:500px){
-  .introduction.description{
-    margin: 0;
   }
   .about.description,h2{
     margin-top: 2rem ;
   }
   .content{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
   footer.description{
     align-items: flex-start;
@@ -510,32 +528,32 @@ textarea:focus {
     min-height: 70vh;
   }
   .title p,.hero-btn{
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
   .introduction p{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     line-height: 35px;
   }
   .main-heading{
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
   p,label,button{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   }
   a{
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   }
   .social-media-icons a{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   }
   .card-title{
-  font-size: 2rem !important;
+  /* font-size: 2rem !important; */
   }
   .title h2{
-  font-size: 4rem;
+  /* font-size: 4rem; */
   }
   .title .content,.hero-btn,.project-description{
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   }
   .title p{
   margin-top: 2rem;
@@ -544,16 +562,23 @@ textarea:focus {
   width: 100%;
   }
   .css-9p5trb{
-  font-size: 1.5rem !important;
+  /* font-size: 1.5rem !important; */
   margin-top: 2rem !important;
   }
 }
+
+@media screen and (min-width:700px) and (max-width:950px) {
+  .image img{
+    width: auto;
+  }
+}
+
 @media screen and (min-width:1600px){
   .about.description,h2{
     margin-top: 2rem ;
   }
   .content{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
   footer.description{
     align-items: flex-start;
@@ -562,32 +587,32 @@ textarea:focus {
     min-height: 70vh;
   }
   .title p,.hero-btn{
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
   .introduction p{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     line-height: 35px;
   }
   .main-heading{
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
   p,label,button{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   }
   a{
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   }
   .social-media-icons a{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   }
   .card-title{
-  font-size: 2rem !important;
+  /* font-size: 2rem !important; */
   }
   .title h2{
-  font-size: 4rem;
+  /* font-size: 4rem; */
   }
   .title .content,.hero-btn,.project-description{
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   }
   .title p{
   margin-top: 2rem;
@@ -596,10 +621,19 @@ textarea:focus {
   width: 100%;
   }
   .card-sub-title.css-16xwfah-TimelineContentSubTitle{
-  font-size: 1.9rem !important;
+  /* font-size: 1.9rem !important; */
   margin-top: 2rem !important;
   }
   .css-16kzc6-ShowMore,.css-q6vr8b-TimelineContentDetails{
-  font-size: 1.9rem !important;
+  /* font-size: 1.9rem !important; */
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .main-heading{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 2rem;
   }
 }
