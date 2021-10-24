@@ -35,22 +35,22 @@ export default function Nav() {
         <nav ref={navHeight}>
         <ul>
           <li>
-            <Link className="nav-link content" to="/portfolio" tabIndex="0">
+            <Link className="nav-link content" to="/" tabIndex="0">
               Home
             </Link>
             <motion.div initial={{width:'0%'}} animate={{
-              width:pathname === '/portfolio' ? '100%':'0%'
+              width:pathname === '/' ? '100%':'0%'
             }} transition={
              {duration:1}
           }
             className="line"></motion.div>
           </li>
           <li>
-            <Link className="nav-link content" to="/portfolio/projects" tabIndex="0">
+            <Link className="nav-link content" to="/projects" tabIndex="0">
               Projects
             </Link>
             <motion.div initial={{width:'0%'}} animate={{
-              width:pathname === '/portfolio/projects' ? '100%':'0%'
+              width:pathname === '/projects' ? '100%':'0%'
             }} transition={
              {duration:1}
           }
@@ -68,11 +68,11 @@ export default function Nav() {
             className="line"></motion.div>
           </li>
           <li>
-            <HashLink tabIndex="0" className="nav-link content" to="/portfolio/#contact">
+            <HashLink tabIndex="0" className="nav-link content" to="/#contact">
               Contact
             </HashLink>
             <motion.div initial={{width:'0%'}} animate={{
-              width:pathname === '/portfolio/#contact' ? '100%':'0%'
+              width:pathname === '/#contact' ? '100%':'0%'
             }} transition={
              {duration:1}
           }

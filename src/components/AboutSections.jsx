@@ -20,7 +20,7 @@ export default function AboutSections() {
 
           <motion.button className='hero-btn content' variants={fade}>
 
-          <HashLink hidefocus="hidefocus" to="/portfolio/#intro">About me</HashLink>
+          <HashLink hidefocus="hidefocus" to="/#intro">About me</HashLink>
           </motion.button>
         </div>
         <div className="image col-lg-6">
