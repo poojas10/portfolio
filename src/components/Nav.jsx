@@ -57,11 +57,11 @@ export default function Nav() {
             className="line"></motion.div>
           </li>
           <li>
-            <Link tabIndex="0" className="nav-link content" to={{pathname:'https://drive.google.com/file/d/1b8Zt0fltR39slrYL-wRoyMB9Q49AVYOP/view?usp=sharing'}} target="_blank">
+            <Link tabIndex="0" className="nav-link content" to={{pathname:'https://drive.google.com/file/d/15T8z0DLBqzNiC_ipVDHszODKvA-P60Q8/view?usp=sharing'}} target="_blank">
               Resume
             </Link>
             <motion.div initial={{width:'0%'}} animate={{
-              width:pathname === 'https://drive.google.com/file/d/1b8Zt0fltR39slrYL-wRoyMB9Q49AVYOP/view?usp=sharing' ? '100%':'0%'
+              width:pathname === 'https://drive.google.com/file/d/15T8z0DLBqzNiC_ipVDHszODKvA-P60Q8/view?usp=sharing' ? '100%':'0%'
             }} transition={
              {duration:1}
           }
