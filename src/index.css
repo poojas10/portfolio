@@ -21,7 +21,7 @@ body {
   background-color: #1b1b1b;
   color: rgb(221, 219, 219);
 }
-h1{
+h1 {
   font-size: 3rem;
 }
 h2 {
@@ -29,7 +29,7 @@ h2 {
   font-size: 2.6rem;
   line-height: 4rem;
 }
-p{
+p {
   color: #ffffff;
 }
 button {
@@ -50,7 +50,7 @@ button:hover {
 }
 
 /* NAVBAR */
-nav .line{
+nav .line {
   margin-bottom: 0;
   /* width: 0; */
 }
@@ -58,12 +58,12 @@ nav .line{
 .nav-link:focus {
   color: #23d997;
 }
-.toggle-btn{
+.toggle-btn {
   margin: 0;
   display: none;
 }
-.toggle-btn:focus{
-  border:1px solid white
+.toggle-btn:focus {
+  border: 1px solid white;
 }
 a,
 .nav-link {
@@ -77,7 +77,7 @@ a,
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-a:hover{
+a:hover {
   color: white;
 }
 ul {
@@ -133,12 +133,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 80vh; */
 }
 .hero-btn {
   z-index: 2;
 }
 .image img {
-  width: 80%;
+  /* width: 80%; */
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -151,12 +152,12 @@ li {
 }
 
 /* ABOUT MYSELF */
-.introduction.description{
+.introduction.description {
   min-height: 30vh;
-  margin:2rem 0;
+  margin: 2rem 0;
   /* border: 1px solid white; */
 }
-.about-me{
+.about-me {
   margin: 2rem 0;
   line-height: 4rem;
   /* font-size: 1.8rem; */
@@ -191,8 +192,13 @@ li {
 .timeline {
   align-items: flex-start;
 }
-.education-details header,.experience-details header{
+.education-details header,
+.experience-details header {
   padding: 1rem;
+}
+.experience-details header {
+  padding-left: 0;
+  padding-top: 2rem;
 }
 .heading {
   margin: auto;
@@ -231,24 +237,27 @@ li {
   padding: 0 1rem;
   /* padding-left: 0 !important; */
 }
-.css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+.css-1kg4xqy-TitleWrapper,
+.css-8765yg,
+.css-qz9nci,
+.css-9p5trb {
   font-size: 1.6rem !important;
   font-size: 1.6rem !important;
   color: #1b1b1b !important;
 }
-.css-16kzc6-ShowMore{
+.css-16kzc6-ShowMore {
   color: #41515f !important;
   font-size: 1.4rem !important;
 }
 
 /* CONTACT FORM */
-footer.description{
+footer.description {
   align-items: flex-start;
 }
 #contact {
   align-items: flex-start;
 }
-.contact-title{
+.contact-title {
   line-height: 40px;
 }
 .info {
@@ -268,7 +277,7 @@ footer.description{
   align-items: flex-start;
   margin-top: 1rem;
 }
-.social-media-icons li{
+.social-media-icons li {
   margin: 0;
   margin-right: 1rem;
   margin-bottom: 2rem;
@@ -306,7 +315,6 @@ footer.description{
 .links:hover {
   color: white;
 }
-
 
 input,
 textarea {
@@ -355,7 +363,7 @@ textarea:focus {
   overflow: hidden;
 }
 
-.project-img:hover{
+.project-img:hover {
   padding: 2rem;
   transition: all 0.3s linear;
 }
@@ -375,13 +383,13 @@ textarea:focus {
   .description {
     padding: 2rem 10rem;
   }
-  .main-heading{
+  .main-heading {
     margin-bottom: 3rem;
   }
-  .title{
+  .title {
     /* font-size: 3rem; */
   }
-  footer.description{
+  footer.description {
     align-items: flex-start;
   }
 }
@@ -407,59 +415,61 @@ textarea:focus {
   .card {
     padding: 0;
   }
-  .toggle-btn{
+  .toggle-btn {
     display: inline-block;
   }
-  .social-media-icons .icons{
- width: 50%;
+  .social-media-icons .icons {
+    width: 50%;
   }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   body {
     text-align: center;
   }
-  .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+  .css-1kg4xqy-TitleWrapper,
+  .css-8765yg,
+  .css-qz9nci,
+  .css-9p5trb {
     /* font-size: 1.7rem !important; */
     color: #1b1b1b !important;
   }
-  .about-me{
-    font-size: 1.9rem;
+  .about-me {
+    font-size: 1.7rem;
   }
-  .introduction.description{
+  .introduction.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .image img{
-    width: 80%;
+  .image img {
+    /* width: 80%; */
   }
-  .title{
+  .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
   }
-  .social-media-icons{
+  .social-media-icons {
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .main-heading{
+  .main-heading {
     margin-bottom: 2rem;
     /* font-size: 3rem; */
   }
-  .introduction.description{
+  .introduction.description {
     margin: auto;
   }
-  nav li{
+  nav li {
     margin: 0.4rem 0;
   }
 }
 
 @media screen and (max-width: 700px) {
- 
   /* h2 {
     font-size: 1.8rem;
   } */
@@ -473,10 +483,13 @@ textarea:focus {
   .card-title.css-1r0flji-TimelineCardHeader {
     padding: 0;
   }
-  .css-1kg4xqy-TitleWrapper,.css-8765yg,.css-qz9nci,.css-9p5trb{
+  .css-1kg4xqy-TitleWrapper,
+  .css-8765yg,
+  .css-qz9nci,
+  .css-9p5trb {
     /* font-size: 1.8rem !important; */
   }
-  .css-qz9nci{
+  .css-qz9nci {
     /* font-size: 2rem !important; */
     color: #1b1b1b;
   }
@@ -494,10 +507,9 @@ textarea:focus {
     /* padding: 1rem; */
     margin-bottom: 2rem;
   }
-  .heading{
+  .heading {
     padding: 1rem 0;
   }
-
 }
 @media screen and (max-width: 500px) {
   .project-card {
@@ -515,125 +527,145 @@ textarea:focus {
     /* font-size: 1.4rem; */
     margin: 2rem 0;
   }
-  .about.description,h2{
-    margin-top: 2rem ;
+  .about.description,
+  h2 {
+    margin-top: 2rem;
   }
-  .content{
+  .content {
     /* font-size: 2.5rem; */
   }
-  footer.description{
+  footer.description {
     align-items: flex-start;
   }
-  .description{
+  .description {
     min-height: 70vh;
   }
-  .title p,.hero-btn{
+  .title p,
+  .hero-btn {
     /* font-size: 2rem; */
   }
-  .introduction p{
+  .introduction p {
     /* font-size: 2.5rem; */
     line-height: 35px;
   }
-  .main-heading{
+  .main-heading {
     /* font-size: 3rem; */
   }
-  p,label,button{
-  /* font-size: 2rem; */
+  p,
+  label,
+  button {
+    /* font-size: 2rem; */
   }
-  a{
-  /* font-size: 1.8rem; */
+  a {
+    /* font-size: 1.8rem; */
   }
-  .social-media-icons a{
-  /* font-size: 2rem; */
+  .social-media-icons a {
+    /* font-size: 2rem; */
   }
-  .card-title{
-  /* font-size: 2rem !important; */
+  .card-title {
+    /* font-size: 2rem !important; */
   }
-  .title h2{
-  /* font-size: 4rem; */
+  .title h2 {
+    /* font-size: 4rem; */
   }
-  .title .content,.hero-btn,.project-description{
-  /* font-size: 2.5rem; */
+  .title .content,
+  .hero-btn,
+  .project-description {
+    /* font-size: 2.5rem; */
   }
-  .title p{
-  margin-top: 2rem;
+  .title p {
+    margin-top: 2rem;
   }
-  .image img{
-  width: 100%;
+  .image img {
+    /* width: 100%; */
   }
-  .css-9p5trb{
-  /* font-size: 1.5rem !important; */
-  margin-top: 2rem !important;
+  .css-9p5trb {
+    /* font-size: 1.5rem !important; */
+    margin-top: 2rem !important;
   }
 }
 
-@media screen and (min-width:700px) and (max-width:950px) {
-  .image img{
+@media screen and (min-width: 700px) and (max-width: 950px) {
+  .image img {
     width: auto;
   }
 }
 
-@media screen and (min-width:1600px){
-  .about.description,h2{
-    margin-top: 2rem ;
+@media screen and (min-width: 1200px) {
+  .about.description,
+  h2 {
+    margin-top: 2rem;
   }
-  .content{
+  .content {
     /* font-size: 2.5rem; */
   }
-  footer.description{
+  footer.description {
     align-items: flex-start;
   }
-  .description{
+  .description {
     min-height: 70vh;
   }
-  .title p,.hero-btn{
+  .about-me{
+    font-size: 1.8rem;
+  }
+  .title p,
+  .hero-btn {
     /* font-size: 2rem; */
   }
-  .introduction p{
+  .introduction p {
     /* font-size: 2.5rem; */
     line-height: 35px;
   }
-  .main-heading{
+  .main-heading {
     /* font-size: 3rem; */
   }
-  p,label,button{
-  /* font-size: 2rem; */
+  p,
+  label,
+  button {
+    /* font-size: 2rem; */
   }
-  a{
-  /* font-size: 1.8rem; */
+  a {
+    /* font-size: 1.8rem; */
   }
-  .social-media-icons a{
-  /* font-size: 2rem; */
+  .social-media-icons a {
+    /* font-size: 2rem; */
   }
-  .card-title{
-  /* font-size: 2rem !important; */
+  .card-title {
+    /* font-size: 2rem !important; */
   }
-  .title h2{
-  /* font-size: 4rem; */
+  .title h2 {
+    /* font-size: 4rem; */
   }
-  .title .content,.hero-btn,.project-description{
-  /* font-size: 2.5rem; */
+  .title .content,
+  .hero-btn,
+  .project-description {
+    /* font-size: 2.5rem; */
   }
-  .title p{
-  margin-top: 2rem;
+  .title p {
+    margin-top: 2rem;
   }
-  .image img{
-  width: 100%;
+  .image img {
+    width: 100%;
+    height: 80vh;
   }
-  .card-sub-title.css-16xwfah-TimelineContentSubTitle{
-  /* font-size: 1.9rem !important; */
-  margin-top: 2rem !important;
+  .card-sub-title.css-16xwfah-TimelineContentSubTitle {
+    /* font-size: 1.9rem !important; */
+    margin-top: 2rem !important;
   }
-  .css-16kzc6-ShowMore,.css-q6vr8b-TimelineContentDetails{
-  /* font-size: 1.9rem !important; */
+  .css-16kzc6-ShowMore,
+  .css-q6vr8b-TimelineContentDetails {
+    /* font-size: 1.9rem !important; */
   }
 }
 
-@media screen and (min-width:1000px) {
-  .main-heading{
-    font-size: 3rem;
+@media screen and (min-width: 1000px) {
+  .main-heading {
+    font-size: 2.3rem;
   }
-  p{
-    font-size: 2rem;
+  p {
+    font-size: 1.7rem;
+  }
+  .image{
+    height: 80vh;
   }
 }

@@ -24,7 +24,7 @@ export default function AboutSections() {
           </motion.button>
         </div>
         <div className="image col-lg-6">
-          <motion.img tabIndex="0"
+          <motion.img 
             variants={photoAnim}
             // className="img-fluid"
             src="./img/home-2.jfif"
